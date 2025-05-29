@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="WhiteEditText" parent="Widget.AppCompat.EditText">
+    <style name="WhiteEditText" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="android:textColor">@color/orange</item>
         <item name="android:textColorHint">@color/orange</item>
         <item name="android:backgroundTint">@color/white</item>
