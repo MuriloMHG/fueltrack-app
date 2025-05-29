@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewContaLogo"
+        android:layout_width="210dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/Logo_Preta_FuelTrack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewContaNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome de Usuário"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextContaNome"
+        app:layout_constraintStart_toStartOf="@+id/editTextContaNome" />
+
+    <EditText
+        android:id="@+id/editTextContaNome"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edittext_background"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewContaLogo" />
+
+    <TextView
+        android:id="@+id/textViewNovaSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nova Senha"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextNovaSenha"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContaNome" />
+
+    <EditText
+        android:id="@+id/editTextNovaSenha"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Digite a nova senha"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNovaSenha"/>
+
+
+    <TextView
+        android:id="@+id/textViewConfirmarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Confirmar Senha"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextConfirmarSenha"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNovaSenha" />
+
+    <EditText
+        android:id="@+id/editTextConfirmarSenha"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirme a nova senha"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConfirmarSenha"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="196dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="56dp"
+        android:text="Salvar Alterações"
+        android:textStyle="bold"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmarSenha"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

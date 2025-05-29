@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/map"
+        android:title="Mapa"
+        android:icon="@drawable/ic_map">
+    </item>
+    <item
+        android:id="@+id/search"
+        android:title="Buscar"
+        android:icon="@drawable/ic_search">
+    </item>
+    <item
+        android:id="@+id/person"
+        android:title="Conta"
+        android:icon="@drawable/ic_person">
+    </item>
+
+
+</menu>
